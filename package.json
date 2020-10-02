@@ -1,0 +1,52 @@
+{
+  "name": "rn-material-buttons",
+  "version": "1.0.0",
+  "description": "Material buttons",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doctorrokter/rn-material-buttons.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "raised",
+    "flat",
+    "button",
+    "ripple",
+    "material"
+  ],
+  "author": "Mikhail Chachkouski <doctorrokter@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/doctorrokter/rn-material-buttons/issues"
+  },
+  "homepage": "https://github.com/doctorrokter/rn-material-buttons#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.50",
+    "@types/react-native": "^0.63.23",
+    "@types/react-native-material-ripple": "^0.9.1",
+    "react": "^16.13.1",
+    "react-native": "^0.63.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.63.3"
+  },
+  "dependencies": {
+    "react-native-material-ripple": "^0.9.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
