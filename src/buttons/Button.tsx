@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import {
     View,
     StyleSheet,
@@ -7,7 +7,7 @@ import {
 
 import Ripple, {RippleProps} from 'react-native-material-ripple';
 
-export interface ButtonProps extends RippleProps {
+export interface ButtonProps extends RippleProps, PropsWithChildren<any> {
     color: string,
     disabledColor: string,
 
@@ -22,6 +22,7 @@ export interface ButtonProps extends RippleProps {
     disableAnimationDuration: number,
 
     payload: any,
+    style: any,
 
     useNativeDriver: boolean,
 }
