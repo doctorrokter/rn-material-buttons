@@ -97,7 +97,7 @@ function Button(props: ButtonProps): JSX.Element {
                 useNativeDriver: props.useNativeDriver,
             })
             .start();
-    }, []);
+    }, [props.focusAnimationDuration, props.useNativeDriver]);
 
     const handlePressIn = React.useCallback(() => {
         handleFocusChange(true);
