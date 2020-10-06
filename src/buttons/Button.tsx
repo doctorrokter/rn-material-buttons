@@ -86,7 +86,7 @@ function Button(props: ButtonProps): JSX.Element {
         if (props.onPress) {
             props.onPress(props.payload);
         }
-    }, []);
+    }, [props.onPress, props.payload]);
 
     const handleFocusChange = React.useCallback((focused: boolean) => {
         Animated
